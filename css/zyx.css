@@ -1,0 +1,196 @@
+@import'reset1.css';
+
+body{
+	position: relative;
+	background: #fbf9f3;
+}
+h1,h2,h3,h4,h5,h6,p{
+	text-align: center;
+}
+/*清浮動*/
+.clearfix::after{
+	/*沒有的話新增一個*/
+	content: "";
+	/*要塊元素才能用clear*/
+	display: block;
+	clear: both;
+}
+
+#top{
+	height: 1px 0 0 0;
+	background: #fbf9f3;
+}
+/*選項列*/
+.nav{
+	margin: 0 auto;
+	padding: 10px 30px;
+	border-radius: 25px;
+	height: 45px;
+	width: 65%;
+	background: #fff;
+	/*陰影*/
+	box-shadow: 0 0 5px #666;
+	/*半透明*/
+	opacity: 0.9;
+	/*margin-top: 50px;*/
+	/*黏性定位*/
+	position: sticky;
+	top: 50px;
+}
+#title{
+	float: left;
+}
+.btli{
+	/*左浮動，橫排*/
+	float: right;
+	/*width: 80px;*/
+	padding: 0 10px;
+	/*行高*/
+	line-height: 45px;
+	/*水平居中*/
+	text-align: center;
+	/*字的顏色*/
+	color: #532100;
+	font-weight: bold;
+}
+.navlist a{
+	/*以塊顯示*/
+	display: block;
+	padding: 0 5px;
+	color: #532100;
+}
+/*滑鼠懸停時*/
+.navlist a:hover{
+	color: #d7680c;
+	background: #feeba9;
+	border-radius: 15px;
+}
+
+/*受訪者介紹*/
+#受訪者介紹{
+	padding: 80px 150px 0 150px;
+	overflow: hidden;
+	color: #532100;
+}
+#受訪者介紹 img{
+	float: left;
+	width: 300px;
+	height: 200px;
+	border-radius: 20px;
+	margin: 10px 20px 10px 0;
+}
+#受訪者介紹 content{
+	text-align: left;
+	font-weight: bold;
+}
+
+
+/*採訪影片*/
+#採訪影片{
+	margin: 30px 120px;
+	padding: 10px 120px;
+	color: #532100;
+	background: #fff;
+	border-radius: 50px;
+}
+.videotitle{
+	margin: 10px auto 20px ;
+	background: #ffe37d;
+	height: 50px;
+	border-radius: 20px;
+}
+.videotitle h2{
+	line-height: 50px;
+}
+.video{
+	margin: 20px auto;
+}
+.video embed{
+	padding: 20px;
+	width: 95%;
+	height: 400px;
+}
+
+/*舉辦活動*/
+#舉辦活動{
+	margin: 20px 120px;
+	overflow: hidden;
+}
+.hdtitle{
+	margin: 20px auto;
+	background: #ffe37d;
+	width: 70%;
+	height: 50px;
+	border-radius: 20px;
+}
+.hdtitle h2{
+	line-height: 50px;
+}
+/*輪播圖*/
+.輪播圖{
+	margin: 10px 50px;
+}
+.輪播圖 li{
+	float: left;
+}
+.輪播圖 img{
+	width: 300px;
+	height: 200px;
+}
+
+/*店家位置*/
+#店家位置{
+	margin: 30px 120px ;
+	padding: 20px 120px ;
+	color: #532100;
+	background: #fff;
+	border-radius: 50px;
+}
+.positiontitle{
+	margin: 10px auto 20px ;
+	background: #ffe37d;
+	height: 50px;
+	border-radius: 20px;
+}
+.positiontitle h2{
+	line-height: 50px;
+}
+.地圖{
+	padding: 20px 150px;
+	height: 500px;
+	background: #eee;
+}
+
+/*友站連結*/
+#link{
+	height: 300px;
+	width: 100%;
+}
+#linkdetail
+{
+	height: 265px;
+	width: 100%;
+	background-color: #333;
+}
+#last{
+	height: 35px;
+	width: 100%;
+	background: #fbf9f3;
+	color: #857868;
+	text-align: center;
+	line-height: 35px;
+}
+
+/*回到頂部*/
+.backtop a{
+	display: block;
+	height: 50px;
+	width: 50px;
+	background: #fff;
+	box-shadow: 0 0 2px;
+	position: fixed;
+	bottom: 60px;
+	right: 25px;
+	/*之後可刪*/
+	color: #000;
+}

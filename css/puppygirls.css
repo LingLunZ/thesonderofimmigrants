@@ -1,0 +1,148 @@
+@import'reset1.css';
+
+body{
+	position: relative;
+	background: #fbf9f3;
+}
+h1,h2,h3,h4,h5,h6,p{
+	text-align: center;
+}
+/*清浮動*/
+.clearfix::after{
+	/*沒有的話新增一個*/
+	content: "";
+	/*要塊元素才能用clear*/
+	display: block;
+	clear: both;
+}
+
+/*輪播大圖*/
+.main{
+	width: 100%;
+	height: 550px;
+	background: #ccc;
+	overflow: hidden;
+	/*標題盒子，之後想放什麼素材疊加可以用這個改改看*/
+		/*用position定位，父元素設置成非默認狀態*/
+		/*相對定位*/
+		/*position: relative;
+		overflow: hidden;*/
+}
+.main img{
+	width: 100%;
+	/*height: 100%;*/
+	/*平滑過渡*/
+	transition: 0.5s;
+}
+/*滑鼠懸停圖片放大*/
+.main img:hover{
+	/*放大1.2倍*/
+	transform: scale(1.05);
+}
+/*標題盒子，之後想放什麼素材疊加可以用這個改改看*/
+/*.aaa{
+	width: 100%;
+	height: 30px;
+	background: #000;
+		絕對定位，感覺不要太常用，不能響應
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+}*/
+
+/*選項列*/
+.nav{
+	margin: 0 auto;
+	padding: 10px 30px;
+	border-radius: 25px;
+	height: 45px;
+	width: 65%;
+	background: #fff;
+	/*陰影*/
+	box-shadow: 0 0 5px #666;
+	/*半透明*/
+	opacity: 0.9;
+	margin-top: 50px;
+	/*黏性定位*/
+	position: sticky;
+	top: 50px;
+}
+#title{
+	float: left;
+}
+.btli{
+	/*左浮動，橫排*/
+	float: right;
+	/*width: 80px;*/
+	padding: 0 10px;
+	/*行高*/
+	line-height: 45px;
+	/*水平居中*/
+	text-align: center;
+	/*字的顏色*/
+	color: #532100;
+	font-weight: bold;
+}
+.navlist a{
+	/*以塊顯示*/
+	display: block;
+	padding: 0 5px;
+	color: #532100;
+}
+/*滑鼠懸停時*/
+.navlist a:hover{
+	color: #d7680c;
+	background: #feeba9;
+	border-radius: 15px;
+}
+
+/*關於我們*/
+#關於我們{
+	position: relative;
+	perspective: 1600px;
+	top: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.puppygirls{
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: a 8s infinite cubic-bezier(.7, 0, .17, 1);
+}
+.puppygirls div{
+	position: absolute;
+	background-size: cover;
+	opacity: .9;
+	width: 400px;
+	height: 250px;
+	transform: rotateY(calc(var(--i)*120deg)) translateZ(600px);
+}
+@keyframes lim{
+	0%{
+		transform: translateZ(-100px) rotateY(0);
+	}
+	33%{
+		transform: translateZ(-100px) rotateY(-120deg);
+	}
+	66%{
+		transform: translateZ(-100px) rotateY(-240deg);
+	}
+	100%{
+		transform: translateZ(-100px) rotateY(-360deg);
+	}
+}
+.lim{
+	background-image: url(../image/關於我們/lim.jpg);
+}
+.xyxyx{
+	background-image: url(../image/關於我們/xyxyx.jpg);
+}
+.lily{
+	background-image: url(../image/關於我們/lily.jpg);
+}
+/*.lun{
+	background-image: url(../image/關於我們/lun.jpg);
+}*/

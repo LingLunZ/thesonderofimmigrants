@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>《移風·異俗》</title>
+	<link rel="stylesheet" href="D:/畢製/網站/css/index.css">
+	<link rel="icon" href="D:/畢製/網站/image/puppygirls(1).ico">
+	<link rel="stylesheet" href="D:/畢製/網站/font/twicon/twicon.css">
+	<!-- <base target="_blank"> -->
+</head>
+<body>
+	<!-- 內容、色塊、間距、邊框 -->
+	<!-- 輪播大圖 -->
+	<div id="輪播大圖">
+		<div>
+			<ul id=imglist>
+				<li><img src="D:/畢製/網站/image/withjc.jpg" alt="輪播大圖"></li>
+				<li><img src="D:/畢製/網站/image/withjy.jpg" alt="輪播大圖"></li>
+			</ul>
+		</div>	
+		<script>
+			var left=0;
+			var timer;
+			run();
+			function run(){
+				if (left>=-3200){
+					left=0;
+				}
+				imglist.style.marginleft=left+'px';
+				var n=(left % 800=0)? n=1200:n=10;
+				left-=10;
+				timer=setTimeout(run,n);
+			}
+		</script>
+	</div>
+	<!-- 頁首標題 -->
+	<!-- class="layer"目前沒作用 -->
+	<div id="頁首" class="layer">
+		<ul class="fl">
+			<h1>
+				<li>
+					<span><i class="twicon-main-island"></i></span>
+					<span>移風‧異俗</span>
+				</li>
+			</h1>
+		</ul>
+		<ul class="fr" class="shell">
+			<li ><a href="#作品主旨">作品主旨</a></li>
+			<li class="portrait"><a href="#受訪者介紹">受訪者介紹</a>
+				<ul class="information">
+					<li>移風</li>
+					<li>異俗</li>
+				</ul>
+			</li>
+			<li class="portrait"><a href="#東南亞小百科">東南亞小百科</a>
+				<ul class="information">
+					<li>台中東南亞餐廳</li>
+					<li>語言小教室</li>
+					<li>各國節慶</li>
+					<li>各國五大必做的事</li>
+				</ul>
+			</li>
+			<li><a href="">關於我們</a></li>
+			<li class="區隔">|</li>
+			<li><a href="#友站連結">友站連結</a></li>
+		</ul>
+	</div>
+	<!-- 作品主旨 -->
+	<div id="作品主旨">
+		<br><br><br><br><br><br><br>
+		<h2 align="center">作品主旨</h2>
+		<br>
+		<p align="left" style="font-weight: bold;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【移風・異俗】此名稱發想自我們的作品内容，我們希望可以透過這個網站分享東南亞新移民、移工來台灣背後的故事。「移風」二字是縮寫自新移民及新住民的風潮。「異俗」二字則是異國文化與風俗的縮寫。新移民的到來也讓台灣人民了解到不同國家的文化與風俗的差異，同時體現台灣對其他國家文化以及人民的包容性。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;另外，網站名稱的英譯“The Sonder of Immigrants”。其“sonder”有「意識到自己生命中的每個過客都背負著不同故事」之意，同時亦有「生動複雜的人生」之意。希望可以大家透過網站了解這些看似不起眼，平日擦肩而過的“過客”的故事。
+		</p>
+	</div>
+	
+	<!-- 受訪者介紹 -->
+	<div id="受訪者介紹">
+		<br><br><br><br><br><br><br>
+		<h2 align="center">移風 Co-Nation</h2>
+			<br>
+			<p align="center" style="font-weight: bold;">在這一陣新移民風潮中，凝聚各國人民的民族意念。</p>
+			<br>
+		<div class="移風">
+			<div class="container">
+				<div class="card" >
+					<a href="D:/畢製/網站/taiwanmain.html">
+						<div class="imgBx">
+							<img src="D:/畢製/網站/image/lun.png">
+						</div>
+						<div class="content">
+							<h2>麥玉珍</h2>
+							<p>來自越南同奈的麥玉珍女士，現居在台已20餘年，從嫁到台灣到走進社會，為了爭取自身以及在困境中的同鄉姐妹的權益，成立了社團法人臺灣新移民協會，現擔任臺灣新移民協會理事長。</p>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="D:/畢製/網站/isaac.html">
+						<div class="imgBx">
+							<img src="D:/畢製/網站/image/isaac.jpg">
+						</div>
+						<div class="content">
+							<h2>Isaac Yong 楊冠義</h2>
+							<p>來自馬來西亞馬六甲的Isaac 已長居在台灣14年，身為點評製的第一批受惠者，為了協助在台畢業之僑外生留台發展、就業，他於2016年創立【Malaysian in Taiwan】社群，而後在2020年成立了【迦南計劃】-——致力於協助媒合企業與僑外生人才求職就業。</p>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="">
+						<div class="imgBx">
+							<img src="D:/畢製/網站/image/lily.png">
+						</div>
+						<div class="content">
+							<h2>Yuki Chen 阮氏雪</h2>
+							<p>來自越南北越宣光省的Yuki初到台灣的時候因為語言不通而受挫，但不服輸的她頻頻突破自我，從翻譯到自行創業，她透過美容美髮行業結合越南文化，現為越式美容創辦人、美容講師、玩美高手團隊創辦人。</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<h2 align="center">異俗 Iso-Life</h2></a>
+			<br>
+			<p align="center" style="font-weight: bold;">人生而平等，不應以國籍劃界線。文化即是我們之間的不同，也是橋樑。</p>
+			<br>
+		<div class="異俗">
+			<div class="container">
+				<div class="card">
+					<div class="imgBx">
+						<img src="D:/畢製/網站/image/lun.png">
+					</div>
+					<div class="content">
+						<h2>Pindy Windy</h2>
+						<p>來自印尼爪哇Pindy目前在臺北故宮主辦印尼文化的捏麵人展覽，她將印尼民俗文化結合捏麵人技，希望藉此拉近兩國之間的距離。她也曾自發性號召身邊親友打掃台中街道，平日會在市集擺攤，製作印尼特色美食。Pindy希望可以透過自己的一份力扭轉台灣人對新移民移工的負面印象。</p>
+					</div>
+				</div>
+				<div class="card">
+					<a href="D:/畢製/網站/fifi.html">
+						<div class="imgBx">
+							<img src="D:/畢製/網站/image/fifi.jpg">
+						</div>
+						<div class="content">
+							<h2>Fiona FiFi 林蕙盈</h2>
+							<p>來自馬來西亞吉隆坡的Fifi，目前的職業為影片企劃，但是私底下卻是一名Youtuber。在男友的鼓勵下，她決定透過Youtube上傳自身的VLOG影片來向台灣觀眾推廣馬來西亞美食以及台馬文化差異。</p>
+						</div>
+					</a>
+				</div>
+				<div class="card">
+					<div class="imgBx">
+						<img src="D:/畢製/網站/image/lily.png">
+					</div>
+					<div class="content">
+						<h2>張郁馨</h2>
+						<p>來自泰國曼谷的郁馨2007年跟丈夫從泰國搬回台灣定居，目前擔任台中地區多所國小、中的泰語老師，同時也是蒲公英越南舞團成員之一，也受邀擔任過上百場演講的泰國文化講師。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 東南亞小百科 -->
+	<div id="東南亞小百科">
+		<img src="D:/畢製/網站/image/東南亞小百科.png">
+	</div>
+	<div id="小百科">
+		<div class="container">
+			<div class="card2">
+				<div class="imgBx">
+					<img src="D:/畢製/網站/image/xyxyx.png">
+				</div>
+				<div class="content">
+					<h2><a href="">語言小教室</a></h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius, totam deserunt sunt ullam, perspiciatis. At ul</p>
+				</div>
+			</div>
+			<div class="card2">
+				<div class="imgBx">
+					<img src="D:/畢製/網站/image/lily.png">
+				</div>
+				<div class="content">
+					<h2><a href="">台中東南亞餐廳</a></h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius, totam deserunt sunt ullam, perspiciatis. At ulla</p>
+				</div>
+			</div>
+			<div class="card2">
+				<div class="imgBx">
+					<img src="D:/畢製/網站/image/lim.png">
+				</div>
+				<div class="content">
+					<h2><a href="">各國五大必做的事</a></h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eius, totam deserunt sunt ullam, perspiciatis. At ulla</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<p><a href="#輪播大圖">回到頂部</a></p>
+	<!-- 尾部資訊 -->
+	<div id="友站連結">友站連結</div>
+	<!-- 右側定位導航 -->
+	<div id="tool"></div>
+</body>
+</html>

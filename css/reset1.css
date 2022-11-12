@@ -1,0 +1,11 @@
+*{
+	margin: 0;
+	padding: 0;
+	/*各種列表樣式為空*/
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+a{
+
+}
